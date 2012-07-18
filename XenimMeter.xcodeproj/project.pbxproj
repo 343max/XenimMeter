@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5014188315B70C510012F669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188215B70C510012F669 /* UIKit.framework */; };
+		5014188515B70C510012F669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188415B70C510012F669 /* Foundation.framework */; };
+		5014188715B70C510012F669 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188615B70C510012F669 /* CoreGraphics.framework */; };
+		5014188D15B70C510012F669 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5014188B15B70C510012F669 /* InfoPlist.strings */; };
+		5014188F15B70C510012F669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5014188E15B70C510012F669 /* main.m */; };
+		5014189315B70C520012F669 /* XMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5014189215B70C520012F669 /* XMAppDelegate.m */; };
+		5014189B15B70C520012F669 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014189A15B70C520012F669 /* SenTestingKit.framework */; };
+		5014189C15B70C520012F669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188215B70C510012F669 /* UIKit.framework */; };
+		5014189D15B70C520012F669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188415B70C510012F669 /* Foundation.framework */; };
+		501418A515B70C520012F669 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501418A315B70C520012F669 /* InfoPlist.strings */; };
+		501418A815B70C520012F669 /* XenimMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501418A715B70C520012F669 /* XenimMeterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5014189E15B70C520012F669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5014187515B70C510012F669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5014187D15B70C510012F669;
+			remoteInfo = XenimMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5014187E15B70C510012F669 /* XenimMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XenimMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5014188215B70C510012F669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5014188415B70C510012F669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5014188615B70C510012F669 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5014188A15B70C510012F669 /* XenimMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XenimMeter-Info.plist"; sourceTree = "<group>"; };
+		5014188C15B70C510012F669 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5014188E15B70C510012F669 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5014189015B70C510012F669 /* XenimMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XenimMeter-Prefix.pch"; sourceTree = "<group>"; };
+		5014189115B70C510012F669 /* XMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMAppDelegate.h; sourceTree = "<group>"; };
+		5014189215B70C520012F669 /* XMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMAppDelegate.m; sourceTree = "<group>"; };
+		5014189915B70C520012F669 /* XenimMeterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XenimMeterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5014189A15B70C520012F669 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		501418A215B70C520012F669 /* XenimMeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XenimMeterTests-Info.plist"; sourceTree = "<group>"; };
+		501418A415B70C520012F669 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		501418A615B70C520012F669 /* XenimMeterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XenimMeterTests.h; sourceTree = "<group>"; };
+		501418A715B70C520012F669 /* XenimMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XenimMeterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5014187B15B70C510012F669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014188315B70C510012F669 /* UIKit.framework in Frameworks */,
+				5014188515B70C510012F669 /* Foundation.framework in Frameworks */,
+				5014188715B70C510012F669 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5014189515B70C520012F669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014189B15B70C520012F669 /* SenTestingKit.framework in Frameworks */,
+				5014189C15B70C520012F669 /* UIKit.framework in Frameworks */,
+				5014189D15B70C520012F669 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5014187315B70C510012F669 = {
+			isa = PBXGroup;
+			children = (
+				5014188815B70C510012F669 /* XenimMeter */,
+				501418A015B70C520012F669 /* XenimMeterTests */,
+				5014188115B70C510012F669 /* Frameworks */,
+				5014187F15B70C510012F669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5014187F15B70C510012F669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5014187E15B70C510012F669 /* XenimMeter.app */,
+				5014189915B70C520012F669 /* XenimMeterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5014188115B70C510012F669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5014188215B70C510012F669 /* UIKit.framework */,
+				5014188415B70C510012F669 /* Foundation.framework */,
+				5014188615B70C510012F669 /* CoreGraphics.framework */,
+				5014189A15B70C520012F669 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5014188815B70C510012F669 /* XenimMeter */ = {
+			isa = PBXGroup;
+			children = (
+				5014189115B70C510012F669 /* XMAppDelegate.h */,
+				5014189215B70C520012F669 /* XMAppDelegate.m */,
+				5014188915B70C510012F669 /* Supporting Files */,
+			);
+			path = XenimMeter;
+			sourceTree = "<group>";
+		};
+		5014188915B70C510012F669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5014188A15B70C510012F669 /* XenimMeter-Info.plist */,
+				5014188B15B70C510012F669 /* InfoPlist.strings */,
+				5014188E15B70C510012F669 /* main.m */,
+				5014189015B70C510012F669 /* XenimMeter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		501418A015B70C520012F669 /* XenimMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				501418A615B70C520012F669 /* XenimMeterTests.h */,
+				501418A715B70C520012F669 /* XenimMeterTests.m */,
+				501418A115B70C520012F669 /* Supporting Files */,
+			);
+			path = XenimMeterTests;
+			sourceTree = "<group>";
+		};
+		501418A115B70C520012F669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				501418A215B70C520012F669 /* XenimMeterTests-Info.plist */,
+				501418A315B70C520012F669 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5014187D15B70C510012F669 /* XenimMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501418AB15B70C520012F669 /* Build configuration list for PBXNativeTarget "XenimMeter" */;
+			buildPhases = (
+				5014187A15B70C510012F669 /* Sources */,
+				5014187B15B70C510012F669 /* Frameworks */,
+				5014187C15B70C510012F669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XenimMeter;
+			productName = XenimMeter;
+			productReference = 5014187E15B70C510012F669 /* XenimMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5014189815B70C520012F669 /* XenimMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501418AE15B70C520012F669 /* Build configuration list for PBXNativeTarget "XenimMeterTests" */;
+			buildPhases = (
+				5014189415B70C520012F669 /* Sources */,
+				5014189515B70C520012F669 /* Frameworks */,
+				5014189615B70C520012F669 /* Resources */,
+				5014189715B70C520012F669 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5014189F15B70C520012F669 /* PBXTargetDependency */,
+			);
+			name = XenimMeterTests;
+			productName = XenimMeterTests;
+			productReference = 5014189915B70C520012F669 /* XenimMeterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5014187515B70C510012F669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XM;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = 343max;
+			};
+			buildConfigurationList = 5014187815B70C510012F669 /* Build configuration list for PBXProject "XenimMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5014187315B70C510012F669;
+			productRefGroup = 5014187F15B70C510012F669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5014187D15B70C510012F669 /* XenimMeter */,
+				5014189815B70C520012F669 /* XenimMeterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5014187C15B70C510012F669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014188D15B70C510012F669 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5014189615B70C520012F669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501418A515B70C520012F669 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5014189715B70C520012F669 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5014187A15B70C510012F669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014188F15B70C510012F669 /* main.m in Sources */,
+				5014189315B70C520012F669 /* XMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5014189415B70C520012F669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501418A815B70C520012F669 /* XenimMeterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5014189F15B70C520012F669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5014187D15B70C510012F669 /* XenimMeter */;
+			targetProxy = 5014189E15B70C520012F669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5014188B15B70C510012F669 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5014188C15B70C510012F669 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		501418A315B70C520012F669 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				501418A415B70C520012F669 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		501418A915B70C520012F669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		501418AA15B70C520012F669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		501418AC15B70C520012F669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeter/XenimMeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		501418AD15B70C520012F669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeter/XenimMeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		501418AF15B70C520012F669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XenimMeter.app/XenimMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeterTests/XenimMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		501418B015B70C520012F669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XenimMeter.app/XenimMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeterTests/XenimMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5014187815B70C510012F669 /* Build configuration list for PBXProject "XenimMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501418A915B70C520012F669 /* Debug */,
+				501418AA15B70C520012F669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		501418AB15B70C520012F669 /* Build configuration list for PBXNativeTarget "XenimMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501418AC15B70C520012F669 /* Debug */,
+				501418AD15B70C520012F669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		501418AE15B70C520012F669 /* Build configuration list for PBXNativeTarget "XenimMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501418AF15B70C520012F669 /* Debug */,
+				501418B015B70C520012F669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5014187515B70C510012F669 /* Project object */;
+}
