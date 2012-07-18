@@ -18,6 +18,10 @@
 		5014189D15B70C520012F669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5014188415B70C510012F669 /* Foundation.framework */; };
 		501418A515B70C520012F669 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501418A315B70C520012F669 /* InfoPlist.strings */; };
 		501418A815B70C520012F669 /* XenimMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501418A715B70C520012F669 /* XenimMeterTests.m */; };
+		501418B315B70CC80012F669 /* XMMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501418B215B70CC80012F669 /* XMMeterViewController.m */; };
+		501418BB15B70DE30012F669 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501418BA15B70DE30012F669 /* MeterView.m */; };
+		501418BC15B70DE80012F669 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501418BA15B70DE30012F669 /* MeterView.m */; };
+		501418BE15B70E180012F669 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501418BD15B70E180012F669 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,11 @@
 		501418A415B70C520012F669 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		501418A615B70C520012F669 /* XenimMeterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XenimMeterTests.h; sourceTree = "<group>"; };
 		501418A715B70C520012F669 /* XenimMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XenimMeterTests.m; sourceTree = "<group>"; };
+		501418B115B70CC80012F669 /* XMMeterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMeterViewController.h; sourceTree = "<group>"; };
+		501418B215B70CC80012F669 /* XMMeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMeterViewController.m; sourceTree = "<group>"; };
+		501418B915B70DE30012F669 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = "<group>"; };
+		501418BA15B70DE30012F669 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = "<group>"; };
+		501418BD15B70E180012F669 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501418BE15B70E180012F669 /* QuartzCore.framework in Frameworks */,
+				5014188715B70C510012F669 /* CoreGraphics.framework in Frameworks */,
 				5014188315B70C510012F669 /* UIKit.framework in Frameworks */,
 				5014188515B70C510012F669 /* Foundation.framework in Frameworks */,
-				5014188715B70C510012F669 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +105,7 @@
 		5014188115B70C510012F669 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				501418BD15B70E180012F669 /* QuartzCore.framework */,
 				5014188215B70C510012F669 /* UIKit.framework */,
 				5014188415B70C510012F669 /* Foundation.framework */,
 				5014188615B70C510012F669 /* CoreGraphics.framework */,
@@ -108,6 +119,10 @@
 			children = (
 				5014189115B70C510012F669 /* XMAppDelegate.h */,
 				5014189215B70C520012F669 /* XMAppDelegate.m */,
+				501418B115B70CC80012F669 /* XMMeterViewController.h */,
+				501418B215B70CC80012F669 /* XMMeterViewController.m */,
+				501418B915B70DE30012F669 /* MeterView.h */,
+				501418BA15B70DE30012F669 /* MeterView.m */,
 				5014188915B70C510012F669 /* Supporting Files */,
 			);
 			path = XenimMeter;
@@ -250,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501418BC15B70DE80012F669 /* MeterView.m in Sources */,
 				5014188F15B70C510012F669 /* main.m in Sources */,
 				5014189315B70C520012F669 /* XMAppDelegate.m in Sources */,
+				501418B315B70CC80012F669 /* XMMeterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501418A815B70C520012F669 /* XenimMeterTests.m in Sources */,
+				501418BB15B70DE30012F669 /* MeterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +366,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
 				INFOPLIST_FILE = "XenimMeter/XenimMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -359,7 +379,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
 				INFOPLIST_FILE = "XenimMeter/XenimMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
