@@ -16,6 +16,7 @@
 
 @property (strong) NSTimer *updateTimer;
 @property (weak) MeterView *meterView;
+@property (readonly, nonatomic) CGRect meterViewFrame;
 
 @end
 
@@ -33,8 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    MeterView *meterView = [[MeterView alloc] initWithFrame:CGRectInset(self.view.bounds, 20, 20)];
+    
+    MeterView *meterView = [[MeterView alloc] initWithFrame:self.meterViewFrame];
     [self.view addSubview:meterView];
     
     meterView.textLabel.text = @"Listeners";
@@ -81,13 +82,21 @@
 - (void)viewDidLayoutSubviews;
 {
     [super viewDidLayoutSubviews];
-    
-    self.meterView.frame = CGRectInset(self.view.bounds, 20, 20);
+    self.meterView.frame = self.meterViewFrame;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+- (CGRect)meterViewFrame;
+{
+    CGRect meterViewFrame = CGRectInset(self.view.bounds, 20, 20);
+    meterViewFrame.size.height = meterViewFrame.size.width = MIN(meterViewFrame.size.width, meterViewFrame.size.height);
+    meterViewFrame.origin.x = (self.view.bounds.size.width - meterViewFrame.size.width) / 2.0;
+    meterViewFrame.origin.y = (self.view.bounds.size.height - meterViewFrame.size.height) / 2.0;
+    return CGRectIntegral(meterViewFrame);
 }
 
 @end

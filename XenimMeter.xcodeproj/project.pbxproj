@@ -420,6 +420,61 @@
 			};
 			name = Release;
 		};
+		501418BF15B7168C0012F669 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Max Winde";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Max Winde";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "99CC2157-3BC2-4CE5-8EF6-658C6860B310";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "99CC2157-3BC2-4CE5-8EF6-658C6860B310";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		501418C015B7168C0012F669 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeter/XenimMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		501418C115B7168C0012F669 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XenimMeter.app/XenimMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XenimMeter/XenimMeter-Prefix.pch";
+				INFOPLIST_FILE = "XenimMeterTests/XenimMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +483,7 @@
 			buildConfigurations = (
 				501418A915B70C520012F669 /* Debug */,
 				501418AA15B70C520012F669 /* Release */,
+				501418BF15B7168C0012F669 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -437,6 +493,7 @@
 			buildConfigurations = (
 				501418AC15B70C520012F669 /* Debug */,
 				501418AD15B70C520012F669 /* Release */,
+				501418C015B7168C0012F669 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
@@ -445,6 +502,7 @@
 			buildConfigurations = (
 				501418AF15B70C520012F669 /* Debug */,
 				501418B015B70C520012F669 /* Release */,
+				501418C115B7168C0012F669 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

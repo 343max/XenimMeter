@@ -87,6 +87,9 @@
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
+	needleLayer.bounds = self.bounds;
+	needleLayer.position = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
+
 	int maxNumberOfTicks = (arcLength * self.frame.size.width) / (self.textLabel.font.pointSize * 10.0);
 	
 	float range = self.maxNumber - self.minNumber;
